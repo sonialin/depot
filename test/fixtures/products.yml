@@ -1,5 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
+ruby:
+  title: Programming Ruby
+  description: hahaha
+  price: 1.00
+  image_url: ruby.png
+
 one:
   title: MyString
   description: MyText
