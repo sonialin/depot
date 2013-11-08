@@ -13,6 +13,9 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+#Include 'rails_12factor' gem to enable all platform features
+gem 'rails_12factor'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
