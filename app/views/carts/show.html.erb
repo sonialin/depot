@@ -2,20 +2,20 @@
 	<p id="notice"><%= notice %></p>
 <% end %>
  
-<div class="cart_title">Your Cart</div>
+<div>Your Cart</div>
 <table>
 	<% @cart.line_items.each do |item| %>
 	<tr>
-		<!-- <td><%= item.product.title %> &times;</td>  -->
+		
 		<td><%= item.quantity %></td>  
 		<td class="item_price"><%= number_to_currency(item.total_price) %></td>
   </tr>
   <% end %>
 </table>
 
-<tr class="total_line">
-	<td colspan="2">Total</td>  
-	<td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
+<tr>
+	<td>Total</td>  
+	<td><%= number_to_currency(@cart.total_price) %></td>
 </tr>
 
 
