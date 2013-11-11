@@ -16,7 +16,7 @@ class ProductsControllerTest < ActionController::TestCase
     assert_response :success
     assert_not_nil assigns(:products)
     assert_select 'table tr', 3
-    assert_select '#main dt', 'MyString'
+    assert_select 'dt', 'MyString'
   end
 
   test "should get new" do

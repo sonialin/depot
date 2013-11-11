@@ -59,8 +59,17 @@
   </div><!-- /.navbar-collapse -->
 </nav>
 
+<!-- <div class="row">
+<div class="col-12 col-sm-8 col-lg-8 main">main content</div>
+<div class="col-12 col-sm-4 col-lg-4 right">right side bar</div>
+</div>  -->
 
     <div class="container">
+        <% if @cart %>
+          <%= hidden_div_if(@cart.line_items.empty?, id:'cart') do %>
+            <%= render @cart %>
+          <% end %>
+        <% end %>
       <%= yield %>
     </div>
   </div>

@@ -2,6 +2,7 @@ class StoreController < ApplicationController
   def index
   	# display products
   	@products = Product.order("created_at DESC")
+  	@cart = current_cart
 
   	# session counter for the times the user has visited
   	@count = increment_counter
