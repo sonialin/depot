@@ -48,6 +48,9 @@ end
 # needed to use helper methods such as pluralize
 gem 'activesupport'
 
+# allow pagination of item listing
+gem 'will_paginate', '~> 3.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
