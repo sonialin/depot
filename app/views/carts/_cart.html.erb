@@ -9,3 +9,5 @@
 </table>
 
 <%= button_to 'Empty cart', cart, :type => "button", :class => "btn btn-ttc", :method => :delete, :confirm => 'Are you sure?' %>
+
+<%= button_to "Check out", new_order_path, :method => :get , :type => "button", :class => "btn btn-success" %>
