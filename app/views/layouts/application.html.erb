@@ -26,7 +26,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <% if @cart %>
-        <%= hidden_div_if(@cart.line_items.empty?, id:'cart') do %>
+        <%= hidden_div_if(@cart.line_items.empty?, id:'cart', class:'thumbnail') do %>
           <%= render @cart %>       
         <% end %>
       <% end %>
